@@ -1,5 +1,6 @@
 {
   "name": "GetData-FineTuunningSelectors",
+  "projectId": "2889d577-28c9-4b22-921e-871362b5d144",
   "description": "Consider a scenario where you need to retrieve WIID and Description of first 10 rows from ACME and save the extracted data into a Data Table. In this scenario, the selector must be adjusted so that our workflow retrieves the WIID and its corresponding description from the first 10 rows.",
   "main": "Main.xaml",
   "dependencies": {
@@ -21,6 +22,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -28,7 +30,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -41,7 +44,8 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": false
+    "modernBehavior": false,
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
